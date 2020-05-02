@@ -42,11 +42,12 @@
 </template>
 
 <script>
+  import { cloudflareUrl } from '../shared/image-loader-service';
 export default {
   name: 'Contact',
   data(){
     return {
-      bg_image: 'https://res.cloudinary.com/nd10/image/upload/v1588420841/hlw-wrld/contact_phone_yjlwyt.png'
+      bg_image: cloudflareUrl + 'contact_phone_yjlwyt.png'
       }
   }, 
 }
