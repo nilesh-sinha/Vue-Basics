@@ -1,7 +1,7 @@
 <template>
 <div class="columns" style="min-height: 85%;">
   <div class="column container-borders">
-    <img class="red-phone" :src="getImageLink('contact_phone.png')" alt="">
+    <img class="red-phone" :src="bg_image" alt="">
   </div>
   <div class="column container-borders">
     <section>
@@ -46,14 +46,9 @@ export default {
   name: 'Contact',
   data(){
     return {
-
+      bg_image: 'https://res.cloudinary.com/nd10/image/upload/v1588420841/hlw-wrld/contact_phone_yjlwyt.png'
       }
-  },    
-  methods: {
-      getImageLink(assetName) {
-          return  require('../assets/images/'+assetName);
-        }
-    }
+  }, 
 }
 </script>
 

@@ -2,7 +2,7 @@
 <div>
     <div class="courses-root">
     <video autoplay muted loop id="myVideo">
-        <source :src="getImageLink('video.mp4')" type="video/mp4">
+        <source :src="videoURl" type="video/mp4">
         Your browser does not support HTML5 video.
     </video>
     <div class="layer-2 bounce">
@@ -29,18 +29,11 @@ export default {
   name: 'Courses',
   data(){
     return {
-        carousels: [
-            { text: 'Slide 4', color: 'primary', image: 'morning_yoga_stretch.jpeg' },
-            { text: 'Slide 5', color: 'primary', image: 'nature_orc.jpeg' },          
-        ],
+      videoURl: 'https://res.cloudinary.com/nd10/video/upload/v1588420844/hlw-wrld/video_rvchyx.mp4',
         gallery: false
       }
   },    
   methods: {
-      getImageLink(assetName) {
-          return  require('../assets/images/'+assetName);
-
-        }
     }
 }
 </script>
